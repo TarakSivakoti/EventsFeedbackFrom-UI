@@ -68,8 +68,14 @@ $(document).ready(function() {
         $("#rating-star-" + ix).toggleClass("btn-warning");
         $("#rating-star-" + ix).toggleClass("btn-default");
       }
-      if (selected_value == 5 || selected_value == 4) {
-        $("#thanks").text("Thank You !!!");
+      if (selected_value == 5) {
+        $("#thanks").text("Awesome :)");
+        $("#thanks").show();
+      } else if (selected_value == 4) {
+        $("#thanks").text("Excellent !!");
+        $("#thanks").show();
+      } else if (selected_value == 3) {
+        $("#thanks").text("Thank You !");
         $("#thanks").show();
       } else {
         $("#thanks").hide();
