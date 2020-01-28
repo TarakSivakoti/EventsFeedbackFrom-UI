@@ -3,16 +3,42 @@
   background-repeat: no-repeat;
   background-size: cover;
 } */
+.admin-body {
+  background-image: url(https://www.freepptbackgrounds.net/wp-content/uploads/2014/04/Light-Blue-Lines-Theme.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: auto;
+  width: 100%;
+}
+.user-body {
+  background-image: url(https://yt3.ggpht.com/qWtQyckd-MaK5rteP5njd6JgubtiuHurzSdGalvCDIiuh8x7tMUHL0rK1gyL_z834lQ1Z-F0FD4=w2120-fcrop64=1,00000000ffffffff-k-c0xffffffff-no-nd-rj);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: auto;
+  width: 100%;
+}
+
 textarea {
   resize: none;
 }
 .feedback-img {
   /* background-color: #6264a7; */
   background-image: url(https://t3.ftcdn.net/jpg/01/43/31/56/240_F_143315675_DoRU37d6ryK5d2z4pj0KcReeQxmYlLdp.jpg);
-  color: red;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 186px;
+  width: auto;
+  opacity: 0.8;
+}
+.admin-img {
+  background-image: url(https://solemis.com/wp-content/uploads/2017/03/Microsoft-Logo-rowne.png);
   background-position: center;
   background-repeat: no-repeat;
   height: 186px;
+  background-size: contain;
   width: auto;
 }
 
@@ -107,4 +133,26 @@ h1 {
 }
 .recommend {
   font-size: 14px;
+}
+.green {
+  color: rgb(18, 235, 18);
+}
+.white {
+  color: white;
+}
+.btn-group-lg>.btn, .btn-lg {
+    border-radius: 2.3rem;
+}
+
+@media screen and (max-width: 425px) {
+  .admin-body,.user-body {
+    background-image: none;
+    font-size: 12px;
+  }
+  .admin-img {
+    height: 100px;
+  }
+  .feedback-img {
+    height: 130px;
+  }
 }

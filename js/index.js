@@ -70,15 +70,23 @@ $(document).ready(function() {
       }
       if (selected_value == 5) {
         $("#thanks").text("Awesome :)");
+        $("#thanks").addClass("green");
+        $("#thanks").removeClass("white");
         $("#thanks").show();
       } else if (selected_value == 4) {
         $("#thanks").text("Excellent !!");
+        $("#thanks").addClass("green");
+        $("#thanks").removeClass("white");
         $("#thanks").show();
       } else if (selected_value == 3) {
         $("#thanks").text("Thank You !");
+        $("#thanks").addClass("white");
+        $("#thanks").removeClass("green");
         $("#thanks").show();
       } else if (selected_value == 2) {
         $("#thanks").text("Okay");
+        $("#thanks").addClass("white");
+        $("#thanks").removeClass("green");
         $("#thanks").show();
       } else {
         $("#thanks").hide();
