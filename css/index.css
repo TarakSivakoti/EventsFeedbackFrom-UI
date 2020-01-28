@@ -6,12 +6,22 @@
 textarea {
   resize: none;
 }
-h2 {
+.feedback-img {
   /* background-color: #6264a7; */
   background-image: url(https://t3.ftcdn.net/jpg/01/43/31/56/240_F_143315675_DoRU37d6ryK5d2z4pj0KcReeQxmYlLdp.jpg);
   color: red;
-  padding: 80px;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 186px;
+  width: auto;
+}
+
+h3,
+h1 {
+  background-color: #6264a7;
   margin: 2% 0 0 0;
+  color: white;
+  padding: 20px;
 }
 .form-label {
   font-size: 12px;
@@ -22,14 +32,14 @@ h2 {
   -webkit-transition: 0.333s ease top, 0.333s ease opacity;
   transition: 0.333s ease top, 0.333s ease opacity;
 }
-.questions {
+/* .questions {
   font-size: 14px;
   color: #5e9bfc;
   margin-left: 12px;
   display: block;
   -webkit-transition: 0.333s ease top, 0.333s ease opacity;
   transition: 0.333s ease top, 0.333s ease opacity;
-}
+} */
 .form-control {
   border-radius: 0;
   border-color: #ccc;
@@ -58,6 +68,7 @@ h2 {
   margin: 20px 0;
   padding: 10px;
   transition: all 0.25s ease 0s;
+  width: 50%;
 }
 .btn-start-order:hover,
 .btn-start-order:active,
@@ -93,4 +104,7 @@ h2 {
 }
 #thanks {
   float: right;
+}
+.recommend {
+  font-size: 14px;
 }

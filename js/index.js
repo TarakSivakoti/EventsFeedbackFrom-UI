@@ -77,6 +77,9 @@ $(document).ready(function() {
       } else if (selected_value == 3) {
         $("#thanks").text("Thank You !");
         $("#thanks").show();
+      } else if (selected_value == 2) {
+        $("#thanks").text("Okay");
+        $("#thanks").show();
       } else {
         $("#thanks").hide();
       }
