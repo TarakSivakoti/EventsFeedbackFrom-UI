@@ -7,9 +7,10 @@ textarea {
   resize: none;
 }
 h2 {
-  background-color: #6264a7;
-  color: white;
-  padding: 20px;
+  /* background-color: #6264a7; */
+  background-image: url(https://t3.ftcdn.net/jpg/01/43/31/56/240_F_143315675_DoRU37d6ryK5d2z4pj0KcReeQxmYlLdp.jpg);
+  color: red;
+  padding: 80px;
   margin: 2% 0 0 0;
 }
 .form-label {
