@@ -3,7 +3,8 @@
   background-repeat: no-repeat;
   background-size: cover;
 } */
-.admin-body {
+.admin-body,
+.user-body {
   background-image: url(../css/imgs/admin-side.jpg);
   background-position: left;
   background-repeat: no-repeat;
@@ -13,11 +14,6 @@
 }
 .user-body {
   background-image: url(../css/imgs/user-side.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: auto;
-  width: 100%;
 }
 
 textarea {
