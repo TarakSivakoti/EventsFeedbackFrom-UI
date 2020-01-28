@@ -4,15 +4,15 @@
   background-size: cover;
 } */
 .admin-body {
-  background-image: url(https://www.freepptbackgrounds.net/wp-content/uploads/2014/04/Light-Blue-Lines-Theme.jpg);
-  background-position: center;
+  background-image: url(../css/imgs/admin-side.jpg);
+  background-position: left;
   background-repeat: no-repeat;
   background-size: cover;
   height: auto;
   width: 100%;
 }
 .user-body {
-  background-image: url(https://yt3.ggpht.com/qWtQyckd-MaK5rteP5njd6JgubtiuHurzSdGalvCDIiuh8x7tMUHL0rK1gyL_z834lQ1Z-F0FD4=w2120-fcrop64=1,00000000ffffffff-k-c0xffffffff-no-nd-rj);
+  background-image: url(../css/imgs/user-side.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -140,12 +140,14 @@ h1 {
 .white {
   color: white;
 }
-.btn-group-lg>.btn, .btn-lg {
-    border-radius: 2.3rem;
+.btn-group-lg > .btn,
+.btn-lg {
+  border-radius: 2.3rem;
 }
 
 @media screen and (max-width: 425px) {
-  .admin-body,.user-body {
+  .admin-body,
+  .user-body {
     background-image: none;
     font-size: 12px;
   }
@@ -154,5 +156,15 @@ h1 {
   }
   .feedback-img {
     height: 130px;
+  }
+}
+@media screen and (max-width: 1440px) {
+  .feedback-img {
+    height: 100px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .offset-md-7 {
+    margin-left: 70.333333%;
   }
 }
