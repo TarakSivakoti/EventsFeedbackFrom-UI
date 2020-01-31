@@ -15,7 +15,10 @@
   vertical-align: middle;
   cursor: pointer;
 }
-.admin-body,
+.offset-md-3 {
+  margin-left: 28%;
+}
+/* .admin-body,
 .user-body {
   background-image: url(../css/imgs/admin-side.jpg);
   background-position: left;
@@ -26,7 +29,7 @@
 }
 .user-body {
   background-image: url(../css/imgs/user-side.jpg);
-}
+} */
 .form-control {
   height: calc(1em + 0.5rem + 2px);
 }
@@ -60,14 +63,14 @@ textarea {
   width: auto;
   opacity: 0.8;
 }
-.admin-img {
+/* .admin-img {
   background-image: url(https://solemis.com/wp-content/uploads/2017/03/Microsoft-Logo-rowne.png);
   background-position: center;
   background-repeat: no-repeat;
   height: 186px;
   background-size: contain;
   width: auto;
-}
+} */
 
 h3,
 h1 {
