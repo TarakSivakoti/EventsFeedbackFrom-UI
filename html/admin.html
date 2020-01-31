@@ -43,19 +43,21 @@
     />
     <script src="../js/index.js"></script>
 
-    <title>Event Feedback Form</title>
+    <title>Event Feedback Data System</title>
   </head>
   <!-- need add to body class="admin-body" -->
   <body>
-    <header class="header">
-      <img
-        class="ms-logo"
-        alt="Microsoft"
-        title="Microsoft"
-        src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDI0LjAuMiwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPgo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IgoJIHZpZXdCb3g9IjAgMCAxMzguMyA1Ni43IiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCAxMzguMyA1Ni43OyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+CjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+Cgkuc3Qwe2ZpbGw6I0ZGRkZGRjt9Cgkuc3Qxe2ZpbGw6I0YyNTAyMjt9Cgkuc3Qye2ZpbGw6IzdGQkEwMDt9Cgkuc3Qze2ZpbGw6IzAwQTRFRjt9Cgkuc3Q0e2ZpbGw6I0ZGQjkwMDt9Cgkuc3Q1e2ZpbGw6bm9uZTt9Cjwvc3R5bGU+Cjx0aXRsZT5NaWNyb3NvZnRfTG9nbzwvdGl0bGU+CjxnPgoJPGcgaWQ9IkxheWVyXzJfMl8iPgoJCTxnIGlkPSJNUy1zeW1ib2xfMV8iPgoJCQk8cGF0aCBjbGFzcz0ic3QwIiBkPSJNNjAuMSwyMS41djEzLjdoLTIuNFYyNC41aC0wLjFsLTQuMiwxMC43aC0xLjVsLTQuMy0xMC43aC0wLjF2MTAuN2gtMi4yVjIxLjVoMy40bDQsMTAuMWgwLjFsNC4xLTEwLjFINjAuMQoJCQkJeiBNNjIuMSwyMi42YzAtMC40LDAuMi0wLjgsMC41LTFjMC42LTAuNiwxLjQtMC42LDIsMGMwLjMsMC4zLDAuNCwwLjYsMC40LDFzLTAuMiwwLjgtMC40LDFjLTAuMywwLjMtMC43LDAuNC0xLjEsMC40CgkJCQlzLTAuOC0wLjItMS0wLjRDNjIuMiwyMy4yLDYyLjEsMjIuOSw2Mi4xLDIyLjZ6IE02NC42LDI1LjNWMzVoLTIuM3YtOS43SDY0LjZ6IE03MS43LDMzLjVjMC40LDAsMC44LTAuMSwxLjEtMC4zCgkJCQljMC40LTAuMiwwLjgtMC40LDEuMS0wLjd2Mi4xYy0wLjQsMC4zLTAuOSwwLjQtMS4yLDAuNWMtMC41LDAuMS0xLjEsMC4yLTEuNSwwLjJjLTIuNiwwLjEtNC43LTEuOS00LjktNC41YzAtMC4yLDAtMC4zLDAtMC40CgkJCQljLTAuMS0xLjQsMC41LTIuOSwxLjMtMy45YzEtMS4xLDIuMi0xLjUsMy45LTEuNWMwLjUsMCwwLjksMC4xLDEuMywwLjJzMC44LDAuMiwxLjEsMC40djIuM2MtMC40LTAuMy0wLjctMC41LTEuMS0wLjYKCQkJCWMtMC40LTAuMi0wLjgtMC4yLTEuMS0wLjJjLTAuOS0wLjEtMS42LDAuMy0yLjIsMC45Yy0wLjYsMC43LTAuOSwxLjUtMC45LDIuNGMtMC4xLDAuOSwwLjMsMS43LDAuOSwyLjMKCQkJCUM3MC4xLDMzLjMsNzAuOCwzMy41LDcxLjcsMzMuNXogTTgwLjUsMjUuMmMwLjIsMCwwLjQsMCwwLjUsMC4xYzAuMiwwLDAuMywwLjEsMC40LDAuMXYyLjNjLTAuMi0wLjEtMC40LTAuMi0wLjYtMC4zCgkJCQljLTAuMy0wLjEtMC42LTAuMi0wLjktMC4xYy0wLjYsMC0xLjEsMC4zLTEuNCwwLjhjLTAuNCwwLjUtMC42LDEuMi0wLjYsMi4ydjQuOWgtMi4ydi05LjhINzh2MS41aDAuMWMwLjItMC41LDAuNi0xLDEtMS4yCgkJCQlDNzkuNCwyNS4zLDc5LjksMjUuMSw4MC41LDI1LjJMODAuNSwyNS4yeiBNODEuNSwzMC40YzAtMS42LDAuNS0zLDEuMy0zLjhjMS0xLDIuMi0xLjQsMy44LTEuNGMxLjUsMCwyLjgsMC41LDMuNiwxLjMKCQkJCXMxLjMsMi4xLDEuMywzLjdTOTEsMzMuMSw5MC4yLDM0Yy0wLjgsMC45LTIuMywxLjQtMy44LDEuNHMtMi44LTAuNS0zLjYtMS4zQzgxLjksMzMuMiw4MS41LDMxLjksODEuNSwzMC40TDgxLjUsMzAuNHoKCQkJCSBNODMuOSwzMC4zYzAsMS4xLDAuMywxLjgsMC43LDIuM2MwLjUsMC42LDEuMiwwLjksMiwwLjljMC44LDAuMSwxLjQtMC4zLDEuOS0wLjljMC41LTAuNiwwLjctMS4zLDAuNy0yLjRzLTAuMy0xLjgtMC43LTIuNAoJCQkJYy0wLjUtMC42LTEuMS0wLjktMS45LTAuOWMtMC44LTAuMS0xLjQsMC4zLTEuOSwwLjlDODQuMSwyOC41LDgzLjksMjkuMyw4My45LDMwLjNMODMuOSwzMC4zeiBNOTUsMjcuOWMwLDAuMywwLjEsMC42LDAuMywwLjgKCQkJCWMwLjUsMC4zLDAuOSwwLjYsMS40LDAuOGMwLjgsMC4zLDEuNCwwLjcsMS45LDEuMmMwLjQsMC41LDAuNiwxLjEsMC42LDEuNmMwLDAuOS0wLjQsMS43LTEuMSwyLjJjLTAuOCwwLjYtMS42LDAuOS0yLjksMC45CgkJCQljLTAuNSwwLTEtMC4xLTEuMy0wLjJjLTAuNS0wLjEtMC45LTAuMi0xLjItMC40di0yLjJjMC41LDAuMywwLjksMC42LDEuMywwLjdjMC41LDAuMiwwLjksMC4zLDEuMywwLjNjMC40LDAuMSwwLjgtMC4xLDEuMS0wLjMKCQkJCWMwLjMtMC4yLDAuNC0wLjUsMC40LTAuOHMtMC4yLTAuNi0wLjQtMC44Yy0wLjUtMC40LTEtMC42LTEuNC0wLjhjLTAuNy0wLjMtMS4zLTAuNy0xLjgtMS4yYy0wLjQtMC41LTAuNi0xLjEtMC42LTEuNwoJCQkJYzAtMC45LDAuNC0xLjYsMS4xLTIuMmMwLjgtMC42LDEuNy0wLjksMi44LTAuOWMwLjQsMCwwLjgsMC4xLDEuMSwwLjFjMC40LDAuMSwwLjgsMC4yLDEuMSwwLjN2Mi4yYy0wLjQtMC4yLTAuNy0wLjQtMS4xLTAuNgoJCQkJcy0wLjgtMC4yLTEuMi0wLjJjLTAuNCwwLTAuOCwwLjEtMS4xLDAuM0M5NS4xLDI3LjQsOTUsMjcuNiw5NSwyNy45TDk1LDI3Ljl6IE0xMDAuMSwzMC40YzAtMS42LDAuNS0zLDEuMy0zLjgKCQkJCWMxLTEsMi4yLTEuNCwzLjgtMS40YzEuNSwwLDIuOCwwLjUsMy42LDEuM2MwLjksMC45LDEuMywyLjEsMS4zLDMuN3MtMC41LDIuOS0xLjMsMy44Yy0wLjksMS0yLjEsMS40LTMuNywxLjQKCQkJCWMtMS41LDAtMi44LTAuNS0zLjYtMS4zQzEwMC42LDMzLjIsMTAwLjEsMzEuOSwxMDAuMSwzMC40eiBNMTAyLjUsMzAuM2MwLDEuMSwwLjMsMS44LDAuNywyLjNjMC41LDAuNiwxLjIsMC45LDEuOSwwLjkKCQkJCWMwLjgsMC4xLDEuNC0wLjMsMS45LTAuOWMwLjUtMC42LDAuNy0xLjMsMC43LTIuNHMtMC4zLTEuOC0wLjctMi40Yy0wLjUtMC42LTEuMS0wLjktMS45LTAuOWMtMC44LTAuMS0xLjQsMC4zLTEuOSwwLjkKCQkJCUMxMDIuOCwyOC41LDEwMi41LDI5LjMsMTAyLjUsMzAuM0wxMDIuNSwzMC4zeiBNMTE3LjksMjcuMmgtMy40djcuOWgtMi4zdi03LjloLTEuNnYtMS45aDEuNlYyNGMtMC4xLTEsMC40LTEuOCwxLjEtMi41CgkJCQlzMS42LTEuMSwyLjYtMWMwLjMsMCwwLjUsMCwwLjgsMC4xYzAuMiwwLDAuNCwwLjEsMC42LDAuMnYyYy0wLjItMC4xLTAuMy0wLjEtMC40LTAuMmMtMC4yLTAuMS0wLjUtMC4xLTAuNy0wLjEKCQkJCWMtMC41LTAuMS0wLjksMC4yLTEuMSwwLjVjLTAuMywwLjQtMC41LDAuOS0wLjQsMS4zdjEuMWgzLjR2LTIuMmwyLjMtMC43djNoMi4zdjEuOWgtMi4zVjMyYzAsMC42LDAuMSwxLjEsMC4zLDEuMgoJCQkJYzAuMywwLjMsMC43LDAuNCwxLjEsMC40YzAuMiwwLDAuNC0wLjEsMC41LTAuMWMwLjItMC4xLDAuNC0wLjIsMC41LTAuM3YxLjljLTAuMywwLjEtMC41LDAuMi0wLjgsMC4zYy0wLjQsMC4xLTAuNywwLjEtMS4xLDAuMQoJCQkJYy0xLDAtMS43LTAuMy0yLjItMC44Yy0wLjUtMC42LTAuOC0xLjMtMC44LTIuM1YyNy4yeiIvPgoJCQk8cmVjdCB4PSIxNS43IiB5PSIxNi45IiBjbGFzcz0ic3QxIiB3aWR0aD0iMTAuOCIgaGVpZ2h0PSIxMC44Ii8+CgkJCTxyZWN0IHg9IjI3LjciIHk9IjE2LjkiIGNsYXNzPSJzdDIiIHdpZHRoPSIxMC44IiBoZWlnaHQ9IjEwLjgiLz4KCQkJPHJlY3QgeD0iMTUuNyIgeT0iMjkiIGNsYXNzPSJzdDMiIHdpZHRoPSIxMC44IiBoZWlnaHQ9IjEwLjgiLz4KCQkJPHJlY3QgeD0iMjcuNyIgeT0iMjkiIGNsYXNzPSJzdDQiIHdpZHRoPSIxMC44IiBoZWlnaHQ9IjEwLjgiLz4KCQk8L2c+Cgk8L2c+Cgk8cmVjdCB5PSIwIiBjbGFzcz0ic3Q1IiB3aWR0aD0iMTM4LjMiIGhlaWdodD0iNTYuNyIvPgo8L2c+Cjwvc3ZnPgo="
-      />
+    <header>
+      <nav class="navbar navbar-expand-md navbar-dark fixed-top head">
+        <img
+          class="ms-logo"
+          alt="Microsoft"
+          title="Microsoft"
+          src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDI0LjAuMiwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPgo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IgoJIHZpZXdCb3g9IjAgMCAxMzguMyA1Ni43IiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCAxMzguMyA1Ni43OyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+CjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+Cgkuc3Qwe2ZpbGw6I0ZGRkZGRjt9Cgkuc3Qxe2ZpbGw6I0YyNTAyMjt9Cgkuc3Qye2ZpbGw6IzdGQkEwMDt9Cgkuc3Qze2ZpbGw6IzAwQTRFRjt9Cgkuc3Q0e2ZpbGw6I0ZGQjkwMDt9Cgkuc3Q1e2ZpbGw6bm9uZTt9Cjwvc3R5bGU+Cjx0aXRsZT5NaWNyb3NvZnRfTG9nbzwvdGl0bGU+CjxnPgoJPGcgaWQ9IkxheWVyXzJfMl8iPgoJCTxnIGlkPSJNUy1zeW1ib2xfMV8iPgoJCQk8cGF0aCBjbGFzcz0ic3QwIiBkPSJNNjAuMSwyMS41djEzLjdoLTIuNFYyNC41aC0wLjFsLTQuMiwxMC43aC0xLjVsLTQuMy0xMC43aC0wLjF2MTAuN2gtMi4yVjIxLjVoMy40bDQsMTAuMWgwLjFsNC4xLTEwLjFINjAuMQoJCQkJeiBNNjIuMSwyMi42YzAtMC40LDAuMi0wLjgsMC41LTFjMC42LTAuNiwxLjQtMC42LDIsMGMwLjMsMC4zLDAuNCwwLjYsMC40LDFzLTAuMiwwLjgtMC40LDFjLTAuMywwLjMtMC43LDAuNC0xLjEsMC40CgkJCQlzLTAuOC0wLjItMS0wLjRDNjIuMiwyMy4yLDYyLjEsMjIuOSw2Mi4xLDIyLjZ6IE02NC42LDI1LjNWMzVoLTIuM3YtOS43SDY0LjZ6IE03MS43LDMzLjVjMC40LDAsMC44LTAuMSwxLjEtMC4zCgkJCQljMC40LTAuMiwwLjgtMC40LDEuMS0wLjd2Mi4xYy0wLjQsMC4zLTAuOSwwLjQtMS4yLDAuNWMtMC41LDAuMS0xLjEsMC4yLTEuNSwwLjJjLTIuNiwwLjEtNC43LTEuOS00LjktNC41YzAtMC4yLDAtMC4zLDAtMC40CgkJCQljLTAuMS0xLjQsMC41LTIuOSwxLjMtMy45YzEtMS4xLDIuMi0xLjUsMy45LTEuNWMwLjUsMCwwLjksMC4xLDEuMywwLjJzMC44LDAuMiwxLjEsMC40djIuM2MtMC40LTAuMy0wLjctMC41LTEuMS0wLjYKCQkJCWMtMC40LTAuMi0wLjgtMC4yLTEuMS0wLjJjLTAuOS0wLjEtMS42LDAuMy0yLjIsMC45Yy0wLjYsMC43LTAuOSwxLjUtMC45LDIuNGMtMC4xLDAuOSwwLjMsMS43LDAuOSwyLjMKCQkJCUM3MC4xLDMzLjMsNzAuOCwzMy41LDcxLjcsMzMuNXogTTgwLjUsMjUuMmMwLjIsMCwwLjQsMCwwLjUsMC4xYzAuMiwwLDAuMywwLjEsMC40LDAuMXYyLjNjLTAuMi0wLjEtMC40LTAuMi0wLjYtMC4zCgkJCQljLTAuMy0wLjEtMC42LTAuMi0wLjktMC4xYy0wLjYsMC0xLjEsMC4zLTEuNCwwLjhjLTAuNCwwLjUtMC42LDEuMi0wLjYsMi4ydjQuOWgtMi4ydi05LjhINzh2MS41aDAuMWMwLjItMC41LDAuNi0xLDEtMS4yCgkJCQlDNzkuNCwyNS4zLDc5LjksMjUuMSw4MC41LDI1LjJMODAuNSwyNS4yeiBNODEuNSwzMC40YzAtMS42LDAuNS0zLDEuMy0zLjhjMS0xLDIuMi0xLjQsMy44LTEuNGMxLjUsMCwyLjgsMC41LDMuNiwxLjMKCQkJCXMxLjMsMi4xLDEuMywzLjdTOTEsMzMuMSw5MC4yLDM0Yy0wLjgsMC45LTIuMywxLjQtMy44LDEuNHMtMi44LTAuNS0zLjYtMS4zQzgxLjksMzMuMiw4MS41LDMxLjksODEuNSwzMC40TDgxLjUsMzAuNHoKCQkJCSBNODMuOSwzMC4zYzAsMS4xLDAuMywxLjgsMC43LDIuM2MwLjUsMC42LDEuMiwwLjksMiwwLjljMC44LDAuMSwxLjQtMC4zLDEuOS0wLjljMC41LTAuNiwwLjctMS4zLDAuNy0yLjRzLTAuMy0xLjgtMC43LTIuNAoJCQkJYy0wLjUtMC42LTEuMS0wLjktMS45LTAuOWMtMC44LTAuMS0xLjQsMC4zLTEuOSwwLjlDODQuMSwyOC41LDgzLjksMjkuMyw4My45LDMwLjNMODMuOSwzMC4zeiBNOTUsMjcuOWMwLDAuMywwLjEsMC42LDAuMywwLjgKCQkJCWMwLjUsMC4zLDAuOSwwLjYsMS40LDAuOGMwLjgsMC4zLDEuNCwwLjcsMS45LDEuMmMwLjQsMC41LDAuNiwxLjEsMC42LDEuNmMwLDAuOS0wLjQsMS43LTEuMSwyLjJjLTAuOCwwLjYtMS42LDAuOS0yLjksMC45CgkJCQljLTAuNSwwLTEtMC4xLTEuMy0wLjJjLTAuNS0wLjEtMC45LTAuMi0xLjItMC40di0yLjJjMC41LDAuMywwLjksMC42LDEuMywwLjdjMC41LDAuMiwwLjksMC4zLDEuMywwLjNjMC40LDAuMSwwLjgtMC4xLDEuMS0wLjMKCQkJCWMwLjMtMC4yLDAuNC0wLjUsMC40LTAuOHMtMC4yLTAuNi0wLjQtMC44Yy0wLjUtMC40LTEtMC42LTEuNC0wLjhjLTAuNy0wLjMtMS4zLTAuNy0xLjgtMS4yYy0wLjQtMC41LTAuNi0xLjEtMC42LTEuNwoJCQkJYzAtMC45LDAuNC0xLjYsMS4xLTIuMmMwLjgtMC42LDEuNy0wLjksMi44LTAuOWMwLjQsMCwwLjgsMC4xLDEuMSwwLjFjMC40LDAuMSwwLjgsMC4yLDEuMSwwLjN2Mi4yYy0wLjQtMC4yLTAuNy0wLjQtMS4xLTAuNgoJCQkJcy0wLjgtMC4yLTEuMi0wLjJjLTAuNCwwLTAuOCwwLjEtMS4xLDAuM0M5NS4xLDI3LjQsOTUsMjcuNiw5NSwyNy45TDk1LDI3Ljl6IE0xMDAuMSwzMC40YzAtMS42LDAuNS0zLDEuMy0zLjgKCQkJCWMxLTEsMi4yLTEuNCwzLjgtMS40YzEuNSwwLDIuOCwwLjUsMy42LDEuM2MwLjksMC45LDEuMywyLjEsMS4zLDMuN3MtMC41LDIuOS0xLjMsMy44Yy0wLjksMS0yLjEsMS40LTMuNywxLjQKCQkJCWMtMS41LDAtMi44LTAuNS0zLjYtMS4zQzEwMC42LDMzLjIsMTAwLjEsMzEuOSwxMDAuMSwzMC40eiBNMTAyLjUsMzAuM2MwLDEuMSwwLjMsMS44LDAuNywyLjNjMC41LDAuNiwxLjIsMC45LDEuOSwwLjkKCQkJCWMwLjgsMC4xLDEuNC0wLjMsMS45LTAuOWMwLjUtMC42LDAuNy0xLjMsMC43LTIuNHMtMC4zLTEuOC0wLjctMi40Yy0wLjUtMC42LTEuMS0wLjktMS45LTAuOWMtMC44LTAuMS0xLjQsMC4zLTEuOSwwLjkKCQkJCUMxMDIuOCwyOC41LDEwMi41LDI5LjMsMTAyLjUsMzAuM0wxMDIuNSwzMC4zeiBNMTE3LjksMjcuMmgtMy40djcuOWgtMi4zdi03LjloLTEuNnYtMS45aDEuNlYyNGMtMC4xLTEsMC40LTEuOCwxLjEtMi41CgkJCQlzMS42LTEuMSwyLjYtMWMwLjMsMCwwLjUsMCwwLjgsMC4xYzAuMiwwLDAuNCwwLjEsMC42LDAuMnYyYy0wLjItMC4xLTAuMy0wLjEtMC40LTAuMmMtMC4yLTAuMS0wLjUtMC4xLTAuNy0wLjEKCQkJCWMtMC41LTAuMS0wLjksMC4yLTEuMSwwLjVjLTAuMywwLjQtMC41LDAuOS0wLjQsMS4zdjEuMWgzLjR2LTIuMmwyLjMtMC43djNoMi4zdjEuOWgtMi4zVjMyYzAsMC42LDAuMSwxLjEsMC4zLDEuMgoJCQkJYzAuMywwLjMsMC43LDAuNCwxLjEsMC40YzAuMiwwLDAuNC0wLjEsMC41LTAuMWMwLjItMC4xLDAuNC0wLjIsMC41LTAuM3YxLjljLTAuMywwLjEtMC41LDAuMi0wLjgsMC4zYy0wLjQsMC4xLTAuNywwLjEtMS4xLDAuMQoJCQkJYy0xLDAtMS43LTAuMy0yLjItMC44Yy0wLjUtMC42LTAuOC0xLjMtMC44LTIuM1YyNy4yeiIvPgoJCQk8cmVjdCB4PSIxNS43IiB5PSIxNi45IiBjbGFzcz0ic3QxIiB3aWR0aD0iMTAuOCIgaGVpZ2h0PSIxMC44Ii8+CgkJCTxyZWN0IHg9IjI3LjciIHk9IjE2LjkiIGNsYXNzPSJzdDIiIHdpZHRoPSIxMC44IiBoZWlnaHQ9IjEwLjgiLz4KCQkJPHJlY3QgeD0iMTUuNyIgeT0iMjkiIGNsYXNzPSJzdDMiIHdpZHRoPSIxMC44IiBoZWlnaHQ9IjEwLjgiLz4KCQkJPHJlY3QgeD0iMjcuNyIgeT0iMjkiIGNsYXNzPSJzdDQiIHdpZHRoPSIxMC44IiBoZWlnaHQ9IjEwLjgiLz4KCQk8L2c+Cgk8L2c+Cgk8cmVjdCB5PSIwIiBjbGFzcz0ic3Q1IiB3aWR0aD0iMTM4LjMiIGhlaWdodD0iNTYuNyIvPgo8L2c+Cjwvc3ZnPgo="
+        />
 
-      Event Feedback Form
+        Event Feedback Data System
+      </nav>
     </header>
     <div class="container">
       <div class="row">
@@ -76,6 +78,14 @@
             method="POST"
             role="form"
           >
+            <div class="js">
+              <label class="form-label">Event Name</label>
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Event Name"
+              />
+            </div>
             <div class="js">
               <label class="form-label" for="datepicker">Date</label>
               <input
@@ -110,11 +120,11 @@
               <label class="form-label">Product Name</label>
               <select class="custom-select" placeholder="Product Name" required>
                 <option selected>Select Product Name</option>
-                <option value="Partner">Partner</option>
-                <option value="MVP">MVP</option>
-                <option value="Engineering">Engineering</option>
-                <option value="Marketing">Marketing</option>
-                <option value="Field">Field</option>
+                <option value="Partner">Office 365</option>
+                <option value="MVP">Cortana</option>
+                <option value="Engineering">SharePoint</option>
+                <option value="Marketing">Power BI</option>
+                <option value="Field">Outlook</option>
               </select>
             </div>
             <div class="js">
@@ -150,10 +160,6 @@
               <input type="text" class="form-control" placeholder="GPM" />
             </div>
             <div class="js">
-              <label class="form-label">Survey ID</label>
-              <input type="text" class="form-control" placeholder="Survey ID" />
-            </div>
-            <div class="js">
               <label class="form-label">Region</label>
               <select class="custom-select" placeholder="Region" required>
                 <option selected>Select Region</option>
@@ -163,27 +169,38 @@
                 <option value="WW">WW</option>
               </select>
             </div>
-            <div class="input-group js add" id="InputsWrapper">
+
+            <div class="js">
+              <label class="form-label"
+                >How may questions you want to add ? Max:5</label
+              >
+              <input
+                type="text"
+                class="form-control"
+                placeholder="How may questions you want to add ? Max:5"
+              />
+            </div>
+
+            <div class="input-group js" id="InputsWrapper">
               <input
                 type="text"
                 class="form-control add-question"
                 id="field_1"
                 placeholder="Add Questions..."
               />
-
-              <div class="input-group-append js" id="AddMoreFileId">
-                <button
-                  class="btn add-btn"
-                  id="AddMoreFileBox"
-                  class="btn btn-info"
-                  type="button"
-                >
-                  +
-                </button>
-                <!-- <button class="btn add-btn" id="removeclass" type="button">
-                  x
-                </button> -->
-              </div>
+            </div>
+            <div class="input-group-append js" id="AddMoreFileId">
+              <button
+                class="btn add-btn"
+                id="AddMoreFileBox"
+                class="btn btn-info"
+                type="button"
+              >
+                +
+              </button>
+              <!-- <button class="btn add-btn" id="removeclass" type="button">
+                x
+              </button> -->
             </div>
 
             <div class="text-center">

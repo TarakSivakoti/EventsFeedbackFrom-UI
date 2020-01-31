@@ -94,12 +94,13 @@ $(document).ready(function() {
     });
   }
   $(".add-question").hide();
+  /* $(".add-question").hide();
   $("#AddMoreFileBox").click(function() {
     $(".add-question").show();
   });
   $("#removequestions").click(function() {
     $(".add-question").hide();
-  });
+  }); */
 
   var MaxInputs = 5;
   var InputsWrapper = $("#InputsWrapper");
@@ -122,9 +123,9 @@ $(document).ready(function() {
       x++; //text box increment
 
       $("#AddMoreFileId").show();
-      $("AddMoreFileBox").html("Add field");
+      // $("AddMoreFileBox").html("Add field");
 
-      if (x == 5) {
+      if (x > 5) {
         $("#AddMoreFileId").hide();
       }
     }

@@ -1,17 +1,14 @@
-/* .container{
-  background-image: url(https://www.setaswall.com/wp-content/uploads/2017/10/Blur-Background-6z-Wallpaper-1080x1920.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-} */
-.header {
+.container {
+  margin-top: 48px;
+}
+.head {
   background-color: #01265d;
   height: 48px;
   width: auto;
   color: whitesmoke;
   font-weight: 600;
 }
-.ms-logo,
-span {
+.ms-logo {
   max-width: 200px;
   max-height: 48px;
   border-style: none !important;
@@ -177,6 +174,9 @@ h1 {
 }
 .add-question {
   display: inline;
+}
+button#AddMoreFileBox {
+  margin-top: 15px;
 }
 
 @media screen and (max-width: 425px) {
