@@ -15,7 +15,7 @@ $(document).ready(function() {
     });
 
     // Code for adding/removing classes here
-    $(".form-group")
+    $(".js")
       .find("input, textarea, select")
       .on("keyup blur focus", function(e) {
         // Cache our selectors
@@ -93,4 +93,53 @@ $(document).ready(function() {
       }
     });
   }
+  $(".add-question").hide();
+  $("#AddMoreFileBox").click(function() {
+    $(".add-question").show();
+  });
+  $("#removequestions").click(function() {
+    $(".add-question").hide();
+  });
+
+  var MaxInputs = 5;
+  var InputsWrapper = $("#InputsWrapper");
+  var AddButton = $("#AddMoreFileBox");
+
+  var x = InputsWrapper.length; //initial text box count
+  var FieldCount = 1; //to keep track of text box added
+
+  //on add input button click
+  $(AddButton).click(function(e) {
+    //max input box allowed
+    if (x <= MaxInputs) {
+      FieldCount++; //text box added increment
+      //add input box
+      $(InputsWrapper).append(
+        '<div class="input-group js add" id="InputsWrapper"><input type="text" class="form-control add-question" placeholder="Add Questions..." id="field_' +
+          FieldCount +
+          '"/><button class="btn add-btn" id="removeclass" type="button">x</button></div>'
+      );
+      x++; //text box increment
+
+      $("#AddMoreFileId").show();
+      $("AddMoreFileBox").html("Add field");
+
+      if (x == 5) {
+        $("#AddMoreFileId").hide();
+      }
+    }
+    return false;
+  });
+
+  $("body").on("click", "#removeclass", function(e) {
+    if (x > 1) {
+      $(this)
+        .parent("div")
+        .remove(); //remove text box
+      x--;
+
+      $("#AddMoreFileId").show();
+    }
+    return false;
+  });
 });

@@ -3,6 +3,21 @@
   background-repeat: no-repeat;
   background-size: cover;
 } */
+.header {
+  background-color: #01265d;
+  height: 48px;
+  width: auto;
+  color: whitesmoke;
+  font-weight: 600;
+}
+.ms-logo,
+span {
+  max-width: 200px;
+  max-height: 48px;
+  border-style: none !important;
+  vertical-align: middle;
+  cursor: pointer;
+}
 .admin-body,
 .user-body {
   background-image: url(../css/imgs/admin-side.jpg);
@@ -15,7 +30,26 @@
 .user-body {
   background-image: url(../css/imgs/user-side.jpg);
 }
-
+.form-control {
+  height: calc(1em + 0.5rem + 2px);
+}
+.custom-select {
+  height: calc(1em + 1.2rem + 2px);
+}
+.add-question {
+  height: fit-content;
+}
+.add-btn {
+  background-color: #6264a7;
+  color: whitesmoke;
+}
+.add {
+  margin-top: 10px;
+}
+::placeholder,
+.custom-select {
+  font-size: smaller;
+}
 textarea {
   resize: none;
 }
@@ -85,12 +119,12 @@ h1 {
   border-radius: 3px;
   color: whitesmoke;
   font-family: "Raleway", sans-serif;
-  font-size: 16px;
+  font-size: 14px;
   line-height: inherit;
-  margin: 20px 0;
-  padding: 10px;
+  margin: 12px 0;
+  padding: 6px;
   transition: all 0.25s ease 0s;
-  width: 50%;
+  width: 25%;
 }
 .btn-start-order:hover,
 .btn-start-order:active,
@@ -106,6 +140,7 @@ h1 {
 .custom-select {
   border-width: 0 0 2px 0 !important;
   border-color: #ccc;
+  cursor: pointer;
   border-radius: 0 !important;
 }
 .custom-select:focus {
@@ -139,6 +174,9 @@ h1 {
 .btn-group-lg > .btn,
 .btn-lg {
   border-radius: 2.3rem;
+}
+.add-question {
+  display: inline;
 }
 
 @media screen and (max-width: 425px) {
