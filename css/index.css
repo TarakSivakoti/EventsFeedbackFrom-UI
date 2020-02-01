@@ -72,12 +72,18 @@ textarea {
   width: auto;
 } */
 
-h3,
-h1 {
+.event-name{
+  background-color: #6264a7;
+  color: white;
+  padding: 10px;
+  font-size: 24px;
+}
+
+h3{
   background-color: #6264a7;
   margin: 2% 0 0 0;
   color: white;
-  padding: 20px;
+  padding: 10px;
 }
 .form-label {
   font-size: 12px;
@@ -180,6 +186,9 @@ h1 {
 }
 button#AddMoreFileBox {
   margin-top: 15px;
+}
+.btn-group-lg>.btn, .btn-lg{
+  font-size: 1rem;
 }
 
 @media screen and (max-width: 425px) {
